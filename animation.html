@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script>
+  	$(document).ready(function(){
+  		$("#b1").click(function(){
+  			$("#d1").animate({fontSize:"4em",letterSpacing:"+=0.3em"},2000)
+  		});
+  		$("#b2").click(function(){
+  			$("#d1").animate({font:"1em",letterSpacing:"-=0.3"},1000)
+  		});
+
+  	});
+  </script>
+	<title></title>
+</head>
+<body>
+<button id="b1">Run Animation</button>
+<button id="b2">Derun Animation</button>
+<div id="d1">Welcome To CSSE</div>
+</body>
+</html>
